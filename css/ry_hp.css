@@ -301,11 +301,12 @@ ul.menu-wrap li.selected {
 
 /* 다이어리 */
 #diary_content {
-	position: absolute;
-	top: 6%;
+	position: relative;
+	top: -55%;
 	left: 27%;
 	width: 450px;
 	height: 400px;
+	max-height: 1500px;
 	background-color: #ffffff;
 	border: 1px solid #6e6e6e;
 	border-radius: 0.5em;
@@ -314,7 +315,7 @@ ul.menu-wrap li.selected {
 }
 
 .diary_calender {
-	position: relative;
+	position: absolute;
 	width: 420px;
 	height: 180px;
 	top: 2%;
@@ -359,7 +360,7 @@ td {
 .btn_control {
 	position: absolute;
 	width: 26%;
-	top: 50%;
+	top: 50.5%;
 	float: right;
 	right: 5%;
 }
@@ -390,22 +391,14 @@ td {
 	vertical-align: middle;
 }
 
-.frame {
-	position: relative;
-	top: 15%;
-	max-height: 800px;
-	overflow-y: scroll;
-	border: 2px solid lightgrey;
-	border-radius: 10px;
-}
-
 /* 동그라미 */
 .diary_circle {
-	position: relative;
-	width: 385px;
-	height: 110px;
-	left: 10px;
-	border: 20px solid #000000;
+	position: absolute;
+	width: 370px;
+	height: 70px;
+	top: 60%;
+	left: 25px;
+	border: 15px solid #000000;
 	/* border 테두리에 이미지 */
 	border-image: url(../image/border_circle.png) 50 round;
 }
@@ -414,16 +407,17 @@ td {
 	font-size: 15px;
 	font-weight: bold;
 	color: #000000;
+	margin: -5px 0;
 }
 
 /* 꽃 */
 .diary_flower {
-	position: relative;
-	top: 10px;
-	left: 10px;
-	width: 390px;
-	height: 110px;
-	border: 20px solid #000000;
+	position: absolute;
+	width: 370px;
+	height: 70px;
+	top: 86%;
+	left: 25px;
+	border: 15px solid #000000;
 	border-image: url(../image/border_flower.png) 90 round;
 }
 
@@ -436,15 +430,19 @@ td {
 /* 추가되는 div */
 .diary_love {
 	position: relative;
-	font-size: 14px;
+	font-size: 15px;
 	color: lightgray;
-	top: 70px;
-	right: 12px;
-	width: 380px;
-	height: 110px;
-	border: 18px solid #000000;
-	margin: 15px 0;
+	top: 35%;
+	width: 355px;
+	height: 70px;
+	margin: 10px -10px;
+	border: 15px solid #000000;
 	border-image: url(../image/border_love.png) 90 round;
+}
+
+.diary_love::after {
+	clear: both;
+	content: '';
 }
 
 /* 사진첩 */
@@ -679,9 +677,9 @@ td {
 		font-weight: bold;
 	}
 
-	.gray_bg .hp_span {
+	.gray_bg > .hp_span {
 		font-size: 8px;
-		margin: 0 10px;
+		margin: 0 -5px;
 	}
 
 	/* 라이언 프로필 */
@@ -761,86 +759,95 @@ td {
 	#diary_content {
 		width: 250px;
 		height: 300px;
-		top: 9%;
+		top: 3.5%;
 		left: 25%;
 	}
 
 	.diary_calender {
-		position: relative;
-		width: 420px;
-		height: 180px;
+		width: 235px;
+		height: 130px;
+		font-size: 0.7rem;
 		top: 2%;
-		left: 13px;
-		background: #ededed;
-		border: 1px solid #6e6e6e;
-		border-radius: 10px;
+		left: 6px;
 	}
 
 	.month_div {
-		position: absolute;
-		width: 50px;
-		height: 178px;
-		background: #ededed;
-		writing-mode: vertical-rl;
-		/* 세로로 */
-		border-radius: 8px;
-		border: 1px solid #6e6e6e;
-		overflow: hidden;
+		width: 30px;
+		height: 129px;
 	}
 
 	.month_div span {
-		color: #e95d5d;
-		font-size: 35px;
+		font-size: 1.7rem;
 		text-align: center;
 	}
 
 	td {
-		position: relative;
-		top: 5px;
-		left: 62px;
-		width: 45px;
-		height: 30px;
-		color: #000000;
-		text-align: center;
-		border: 1px solid #000;
-		background: #ffffff;
-		border-radius: 10px;
+		top: 6px;
+		left: 33px;
+		width: 25px;
+		height: 20px;
 	}
 
 	/* 플/마 버튼 */
 	.btn_control {
-		position: absolute;
-		width: 26%;
+		width: 42%;
 		top: 50%;
-		float: right;
-		right: 5%;
+		right: 0;
 	}
 
 	.plusbtn {
-		width: 50px;
-		height: 30px;
-		border-radius: 10px;
-		z-index: 99;
+		width: 40px;
+		height: 20px;
 	}
 
 	.plusbtn img {
-		width: 20px;
-		height: 20px;
-		vertical-align: middle;
+		width: 15px;
+		height: 15px;
 	}
-
+	
 	.minusbtn {
-		width: 50px;
-		height: 30px;
-		border-radius: 10px;
-		background: #443333;
-		z-index: 99;
+		width: 40px;
+		height: 20px;
+	}
+	
+	.minusbtn img {
+		width: 15px;
+		height: 15px;
 	}
 
-	.minusbtn img {
-		width: 20px;
-		height: 20px;
-		vertical-align: middle;
+	/* 동그라미 */
+	.diary_circle {
+		width: 200px;
+		height: 50px;
+		left: 10px;
+	}
+	
+	.diary_circle p {
+		font-size: 10px;
+	}
+	
+	/* 꽃 */
+	.diary_flower {
+		width: 200px;
+		height: 45px;
+		left: 10px;
+	}
+	
+	.diary_flower p {
+		font-size: 10px;
+	}
+	
+	/* 추가되는 div */
+	.diary_love {
+		font-size: 10px;
+		top: 20%;
+		left: 0px;
+		width: 190px;
+		height: 50px;
+	}
+
+	.diary_love::after {
+		clear: both;
 	}
 
 	/* 사진첩 */
@@ -857,70 +864,72 @@ td {
 	}
 
 	/* 눈물 라이언 */
+	.tears_ryan {
+		width: 248px;
+		height: 260px;
+	}
+
 	.tears_ryan img {
 		width: 100px;
 		height: 100px;
 		top: 10%;
+		left: 25%;
 	}
 
 	.tears_ryan span {
-		top: 40%;
+		top: 56%;
 		left: 15px;
 		font-size: 12px;
 	}
 
 	.tears_ryan hr {
-		top: 48%;
-		width: 49%;
+		top: 70%;
+		width: 88%;
 		margin: 0 15px;
 	}
 
 	/* 댓글 */
 	.tears_ryan .comment {
-		top: 50%;
+		top: 75%;
 		left: 15px;
 		width: 220px;
 		height: 60px;
 	}
 
 	/* 길리 라이언 */
-	.gilri_ryan p {
-		top: 5%;
+	.gilri_ryan {
+		width: 240px;
+		height: 280px;
 	}
 
 	.gilri_ryan img {
 		width: 100px;
 		height: 100px;
 		top: 10%;
-		left: 5%;
+		left: 35%;
 	}
 
 	.gilri_ryan span {
-		position: absolute;
-		top: 62%;
+		top: 54%;
 		left: 18px;
-		color: #1f1b1b;
-		font-size: 15px;
-		vertical-align: bottom;
-		/* 텍스트를 하단에 위치 */
+		font-size: 12px;
 	}
 
 	.gilri_ryan hr {
-		top: 68%;
-		width: 49%;
+		top: 72%;
+		width: 88%;
 		margin: 0 15px;
 	}
 
 	.gilri_ryan .comment {
-		top: 50%;
-		left: 15px;
+		top: 77%;
+		left: 12px;
 		width: 220px;
 		height: 60px;
 	}
 
 	.gilri_ryan .comment span {
-		position: relative;
-		top: 0px;
+		top: 0;
 		left: 0px;
 		font-size: 12px;
 	}
