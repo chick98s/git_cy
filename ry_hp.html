@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<title>라이언 미니홈피</title>
+	<link rel="stylesheet" href="http://step079.dothome.co.kr/css/ry_hp.css">
+
+	<link rel="stylesheet" media="screen and (max-width: 1399px)" href="ry_hp.css">
+	<link rel="stylesheet" media="screen and (min-width: 329px) and (max-width: 800px)" href="ry_hp.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!--나이스 스크롤-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+
+</head>
+
+<body>
+	<div class="logo">
+		<img src="http://step079.dothome.co.kr/img/cy_logo.png" alt="로고">
+		<p>cyworld</p>
+	</div>
+
+	<!-- 모바일 하단 메뉴 -->
+	<div class="bottom_meun">
+		<div id="bottom_home">
+			<img src="http://step079.dothome.co.kr/img/cy_home.png" alt="홈">
+		</div>
+		<div id="bottom_memo">
+			<img src="http://step079.dothome.co.kr/img/cy_memo.png" alt="다이어리">
+		</div>
+		<div id="bottom_pic">
+			<img src="http://step079.dothome.co.kr/img/cy_pic.png" alt="사진첩">
+		</div>
+		<div id="bottom_visit">
+			<img src="http://step079.dothome.co.kr/img/cy_visit.png" alt="방명록">
+		</div>
+	</div>
+
+	<div class="orange_bg">
+		<div class="dot_bg">
+			<div class="gray_bg">
+				<span>TODAY</span>
+				<span style="color: red;">200</span>
+				<span>|</span>
+				<span>TOTAL</span>
+				<span style="color: red;">9800</span>
+
+				<span class="hp_span">
+					&nbsp; &nbsp; &nbsp; &nbsp;라이언의 미니홈피★
+				</span>
+
+				<div class="profile_bg">
+					<img class="pro_img" src="http://step079.dothome.co.kr/img/pf_ryan.png" alt="라이언 프로필">
+
+					<span>
+						안녕하세요!<br>
+						저는 라이언이구<br>
+						지금은 훈련중이에오
+					</span>
+
+					<!-- 음악 -->
+					<audio id="music" src="http://step079.dothome.co.kr/audio/rain.mp3"></audio>
+
+					<div class="control">
+						<a href="javascript:void(0);" class="play">▶</a>
+						<a href="javascript:void(0);" class="stop">■</a>
+					</div>
+
+					<select class="sel_box">
+						<option>파도타기</option>
+						<option>방명록</option>
+						<option>BGM</option>
+					</select>
+				</div>
+
+				<!-- 홈 -->
+				<div id="home_content">
+					<p class="news">News</p>
+					<div class="news_div">
+						<h5>새 소식이 없습니다.</h5>
+					</div>
+
+					<p class="room">Room</p>
+					<div class="ryan_div">
+						<img src="http://step079.dothome.co.kr/img/ry_home.jpg" alt="라이언사진">
+					</div>
+				</div>
+
+				<!-- 메뉴 -->
+				<ul class="menu-wrap">
+					<li class="menu_home selected">홈</li>
+					<li class="menu_diary">다이어리</li>
+					<li class="menu_photo">사진첩</li>
+					<li class="menu_visit">방명록</li>
+				</ul>
+
+				<!-- 다이어리 -->
+				<div id="diary_content">
+					<div class="diary_calender">
+						<div class="month_div">
+							<span>November</span>
+						</div>
+
+						<!-- 달력 테이블 -->
+						<table>
+							<tr>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td style="color: #0066cc;">6</td>
+							</tr>
+							<tr>
+								<td style="color: #e95d6b;">7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td style="color: #0066cc;">13</td>
+							</tr>
+							<tr>
+								<td style="color: #e95d6b;">14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td style="color: #0066cc;">20</td>
+							</tr>
+							<tr>
+								<td style="color: #e95d6b;">21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td style="color: #0066cc;">27</td>
+							</tr>
+							<tr>
+								<td style="color: #e95d6b;">28</td>
+								<td>29</td>
+								<td>30</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="btn_control">
+						<button class="plusbtn">
+							<img src="http://step079.dothome.co.kr/img/plus_btn.png" alt="추가버튼">
+						</button>
+
+						<button class="minusbtn">
+							<img src="http://step079.dothome.co.kr/img/minus_btn.png" alt="삭제버튼">
+						</button>
+					</div>
+
+					<div class="frame">
+						<div class="diary_circle">
+							<p style="color:#0066cc">2021.11.10</p><br>
+							<p>너와 나의 연결고리</p>
+							<p>이건 우리안에 소리</p>
+							<p>turn up~~~~~~~~~~~!</p>
+						</div>
+
+						<div class="diary_flower">
+							<p style="color:#0066cc">2021.12.22</p><br>
+							<p>Happy BirthDay To you...♬</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- 사진첩 -->
+				<div id="gallery_content">
+					<!-- 눈물 라이언 -->
+					<div class="tears_ryan">
+						<p style="color: #006699;">라이언</p>
+						<img src="http://step079.dothome.co.kr/img/tears_ryan.png" alt="눈물라이언">
+						<span>
+							오늘은 정말 슬픈 하루다...<br>
+							ㄴr는 가끔 눈물을 흘린ㄷr....
+						</span>
+						<hr>
+
+						<!--댓글-->
+						<div class="comment">
+							<span style="color: #006699;">튜브</span>
+							<span>: 퍼가요~♥</span><br>
+
+							<span style="color: #006699;">춘식이</span>
+							<span>: 울지마 주인ㅠㅠ</span><br>
+
+							<span style="color: #006699;">무지</span>
+							<span>: 슬퍼하지마 No No No~~</span>
+						</div>
+					</div>
+
+					<!-- 길리 라이언 -->
+					<div class="gilri_ryan">
+						<p>라이언</p>
+						<img src="http://step079.dothome.co.kr/img/gilri_ryan.png" alt="길리라이언">
+						<span>
+							졸려서 낙엽에 누웠다<br>
+							맑은 하늘을 보니 기분 짱....!<br>
+							내 옆에 누울 사람???
+						</span>
+						<hr>
+
+						<!-- 댓글 div -->
+						<div class="comment">
+							<span style="color: #006699;">라이언</span>
+							<span>: 장소는 산속~</span><br>
+
+							<span style="color: #006699;">춘식이</span>
+							<span>: 주인님 지금 달려갈게용</span><br>
+
+							<span style="color: #006699;">어피치</span>
+							<span>: 잘생겼다^^</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- 방명록 -->
+				<div id="visit_content">
+					<div class="title">
+						No. 112 춘식이 🏠(2021. 11. 02 12:55)
+					</div>
+
+					<div class="cunsick_talk">
+						<img src="http://step079.dothome.co.kr/img/visit_cunsick.png" alt="춘식이">
+						<span>라이언 주인님... 집에 언제오세요?</span>
+					</div>
+
+					<div class="title">
+						No. 113 죠르디 🏠(2021. 11. 02 3:18)
+					</div>
+
+					<div class="jordy_talk">
+						<img src="http://step079.dothome.co.kr/img/visit_jordy.png" alt="죠르디">
+						<span>뒹굴뒹굴~~ㅎ</span>
+					</div>
+
+					<div class="title">
+						No. 114 어피치 🎻(2021. 11. 11 7:59)
+					</div>
+
+					<div class="apeach_talk">
+						<img src="http://step079.dothome.co.kr/img/visit_apeach.png" alt="어피치">
+						<span>Hello Ryan~~~ :)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		/*
+		//메뉴 클릭 시 색상 변경
+		const menuWrap = document.querySelector('.menu-wrap');
+		function select(ulEl, liEl) { //함수 select		
+			menuWrap.eq(0).remove('selected');
+	
+			Array.from(ulEl.children).forEach( //ul 자식 li를 배열로 지정하고 반복
+				//반복해서 selected 클래스 지움
+				v => v.classList.remove('selected')
+			)
+			//liEl이면 selected 클래스 더하기
+			if (liEl) liEl.classList.add('selected');
+	
+		}
+	
+		menuWrap.addEventListener('click', e => { //ul 메뉴 클릭 시
+			const selected = e.target; //클릭 요소 변수에 넣음
+			select(menuWrap, selected); //선택된 요소만 select 적용
+		});
+		*/
+
+		/* 음악 */
+		var audio = document.getElementById("music");
+
+		$(document).ready(function () {
+			//재생
+			$('.play').on('click', function (e) {
+				e = e || window.event;
+				var btn = e.target;
+
+				audio.play();
+				isPlaying = true;
+			});
+
+			//정지
+			$('.stop').on('click', function (e) {
+				audio.pause();
+				audio.currentTime = 0;
+				isPlaying = false;
+			});
+
+			$('ul.menu-wrap li').click(function () {
+				//li가 클릭되있는 상태라면 selected 클래스를 삭제한다.
+				$('ul.menu-wrap li').removeClass('selected');
+
+				//li를 클릭하면 selected 클래스를 추가한다.
+				$(this).addClass('selected');
+			});
+
+			/* 스크롤 */
+			$('#diary_content').niceScroll();
+			$('.frame').niceScroll();
+			$('#gallery_content').niceScroll();
+			$('#visit_content').niceScroll();
+
+			//홈 클릭 시
+			$('.menu_home').click(function () {
+				$("#home_content").show();
+
+				$("#diary_content").hide();
+				$("#gallery_content").hide();
+				$("#visit_content").hide();
+			});
+
+			//다이어리 클릭 시
+			$('.menu_diary').click(function () {
+				$("#diary_content").show();
+
+				$("#home_content").hide();
+				$("#gallery_content").hide();
+				$("#visit_content").hide();
+			});
+
+			// 다이어리 글쓰기 추가 버튼
+			$('.plusbtn').click(function () {
+				var love = "<div class=\"diary_love\">글자를 입력하세요.</div>"
+				$('.diary_flower').append(love); //div 하나씩 추가
+			});
+
+			// 다이어리 글쓰기 삭제 버튼 
+			$('.minusbtn').click(function () {
+				$('.diary_love:last-child').remove(); //div 하나씩 감소
+			});
+
+			//사진첩 클릭 시
+			$('.menu_photo').click(function () {
+				$("#gallery_content").show();
+
+				$("#home_content").hide();
+				$("#diary_content").hide();
+				$("#visit_content").hide();
+			});
+
+			//방명록 클릭 시
+			$('.menu_visit').click(function () {
+				$("#visit_content").show();
+
+				$("#home_content").hide();
+				$("#diary_content").hide();
+				$("#gallery_content").hide();
+			});
+
+			/* 모바일 하단 메뉴 */
+			$('#bottom_home').click(function () {
+				$("#home_content").show();
+
+				$("#diary_content").hide();
+				$("#gallery_content").hide();
+				$("#visit_content").hide();
+			});
+
+			$('#bottom_memo').click(function () {
+				$("#diary_content").show();
+
+				$("#home_content").hide();
+				$("#gallery_content").hide();
+				$("#visit_content").hide();
+			});
+
+			//사진첩 클릭 시
+			$('#bottom_pic').click(function () {
+				$("#gallery_content").show();
+
+				$("#home_content").hide();
+				$("#diary_content").hide();
+				$("#visit_content").hide();
+			});
+
+			//방명록 클릭 시
+			$('#bottom_visit').click(function () {
+				$("#visit_content").show();
+
+				$("#home_content").hide();
+				$("#diary_content").hide();
+				$("#gallery_content").hide();
+			});
+		});
+	</script>
+</body>
+
+</html>
