@@ -407,7 +407,7 @@ td {
 	left: 10px;
 	border: 20px solid #000000;
 	/* border 테두리에 이미지 */
-	border-image: url(http://step079.dothome.co.kr/img/border_circle.png) 50 round;
+	border-image: url(../image/border_circle.png) 50 round;
 }
 
 .diary_circle p {
@@ -424,7 +424,7 @@ td {
 	width: 390px;
 	height: 110px;
 	border: 20px solid #000000;
-	border-image: url(http://step079.dothome.co.kr/img/border_flower.png) 90 round;
+	border-image: url(../image/border_flower.png) 90 round;
 }
 
 .diary_flower p {
@@ -444,7 +444,7 @@ td {
 	height: 110px;
 	border: 18px solid #000000;
 	margin: 15px 0;
-	border-image: url(http://step079.dothome.co.kr/img/border_love.png) 90 round;
+	border-image: url(../image/border_love.png) 90 round;
 }
 
 /* 사진첩 */
