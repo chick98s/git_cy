@@ -79,8 +79,9 @@ body {
 }
 
 .gray_bg .hp_span {
-	font-size: 17px;
+	font-size: 13px;
 	color: #000;
+	margin: 20px 35px;
 }
 
 /* 라이언 프로필 */
@@ -302,147 +303,64 @@ ul.menu-wrap li.selected {
 /* 다이어리 */
 #diary_content {
 	position: relative;
-	top: -55%;
+	top: -54%;
 	left: 27%;
 	width: 450px;
 	height: 400px;
-	max-height: 1500px;
 	background-color: #ffffff;
 	border: 1px solid #6e6e6e;
 	border-radius: 0.5em;
+	max-height: 300vh;
 	overflow-y: scroll;
 	display: none;
 }
 
 .diary_calender {
 	position: absolute;
-	width: 420px;
-	height: 180px;
+	width: 80%;
+	height: auto;
+	left: 10%;
 	top: 2%;
-	left: 13px;
 	background: #ededed;
-	border: 1px solid #6e6e6e;
-	border-radius: 10px;
 }
 
-.month_div {
-	position: absolute;
-	width: 50px;
-	height: 178px;
-	background: #ededed;
-	writing-mode: vertical-rl;
-	/* 세로로 */
-	border-radius: 8px;
-	border: 1px solid #6e6e6e;
-	overflow: hidden;
-}
-
-.month_div span {
-	color: #e95d5d;
-	font-size: 35px;
-	text-align: center;
+table {
+	margin: auto;
 }
 
 td {
 	position: relative;
-	top: 5px;
-	left: 62px;
+	top: 0px;
 	width: 45px;
-	height: 30px;
-	color: #000000;
+	height: 25px;
 	text-align: center;
-	border: 1px solid #000;
+	color: #000000;
+	border: 1px solid #ccc;
 	background: #ffffff;
 	border-radius: 10px;
 }
 
-/* 플/마 버튼 */
-.btn_control {
-	position: absolute;
-	width: 26%;
-	top: 50.5%;
-	float: right;
-	right: 5%;
-}
-
-.plusbtn {
-	width: 50px;
-	height: 30px;
-	border-radius: 10px;
-	z-index: 99;
-}
-
-.plusbtn img {
-	width: 20px;
-	height: 20px;
-	vertical-align: middle;
-}
-
-.minusbtn {
-	width: 50px;
-	height: 30px;
-	border-radius: 10px;
-	z-index: 99;
-}
-
-.minusbtn img {
-	width: 20px;
-	height: 20px;
-	vertical-align: middle;
-}
-
-/* 동그라미 */
-.diary_circle {
-	position: absolute;
-	width: 370px;
-	height: 70px;
-	top: 60%;
-	left: 25px;
-	border: 15px solid #000000;
-	/* border 테두리에 이미지 */
-	border-image: url(../image/border_circle.png) 50 round;
-}
-
-.diary_circle p {
-	font-size: 15px;
-	font-weight: bold;
-	color: #000000;
-	margin: -5px 0;
-}
-
-/* 꽃 */
-.diary_flower {
-	position: absolute;
-	width: 370px;
-	height: 70px;
-	top: 86%;
-	left: 25px;
-	border: 15px solid #000000;
-	border-image: url(../image/border_flower.png) 90 round;
-}
-
-.diary_flower p {
-	font-size: 15px;
-	font-weight: bold;
-	color: #000000;
-}
-
-/* 추가되는 div */
-.diary_love {
+.diary {
 	position: relative;
-	font-size: 15px;
-	color: lightgray;
-	top: 35%;
-	width: 355px;
-	height: 70px;
-	margin: 10px -10px;
-	border: 15px solid #000000;
-	border-image: url(../image/border_love.png) 90 round;
+	width: 80%;
+	height: 180px;
+	top: 170px;
+	text-align: center;
+	margin: 20px auto;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	border: 2px solid #222;
+	border-radius: 5px;
 }
 
-.diary_love::after {
-	clear: both;
-	content: '';
+.diary .date {
+	color:#0066cc;
+	float: left;
+}
+
+.diary p {
+	display: block;
+	margin: auto;
 }
 
 /* 사진첩 */
