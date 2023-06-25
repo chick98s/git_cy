@@ -595,10 +595,14 @@ td {
 		font-weight: bold;
 	}
 
-	.gray_bg > .hp_span {
-		font-size: 8px;
-		margin: 0 -5px;
+	.gray_bg .hp_span {
+		position: relative;
+		top: 3px;
+		font-size: 10px;
+		margin: 0 10px;
 	}
+
+	.diary {height: 160px;}	
 
 	/* 라이언 프로필 */
 	.profile_bg {
@@ -679,93 +683,6 @@ td {
 		height: 300px;
 		top: 3.5%;
 		left: 25%;
-	}
-
-	.diary_calender {
-		width: 235px;
-		height: 130px;
-		font-size: 0.7rem;
-		top: 2%;
-		left: 6px;
-	}
-
-	.month_div {
-		width: 30px;
-		height: 129px;
-	}
-
-	.month_div span {
-		font-size: 1.7rem;
-		text-align: center;
-	}
-
-	td {
-		top: 6px;
-		left: 33px;
-		width: 25px;
-		height: 20px;
-	}
-
-	/* 플/마 버튼 */
-	.btn_control {
-		width: 42%;
-		top: 50%;
-		right: 0;
-	}
-
-	.plusbtn {
-		width: 40px;
-		height: 20px;
-	}
-
-	.plusbtn img {
-		width: 15px;
-		height: 15px;
-	}
-	
-	.minusbtn {
-		width: 40px;
-		height: 20px;
-	}
-	
-	.minusbtn img {
-		width: 15px;
-		height: 15px;
-	}
-
-	/* 동그라미 */
-	.diary_circle {
-		width: 200px;
-		height: 50px;
-		left: 10px;
-	}
-	
-	.diary_circle p {
-		font-size: 10px;
-	}
-	
-	/* 꽃 */
-	.diary_flower {
-		width: 200px;
-		height: 45px;
-		left: 10px;
-	}
-	
-	.diary_flower p {
-		font-size: 10px;
-	}
-	
-	/* 추가되는 div */
-	.diary_love {
-		font-size: 10px;
-		top: 20%;
-		left: 0px;
-		width: 190px;
-		height: 50px;
-	}
-
-	.diary_love::after {
-		clear: both;
 	}
 
 	/* 사진첩 */
